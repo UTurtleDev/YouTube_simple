@@ -8,7 +8,6 @@ import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
 video_to_convert = ""
-#choosen_folder = ""
 video_name = ""
 file_name = ""
 # https://www.youtube.com/watch?v=DBiu4ICFgB0
