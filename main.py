@@ -10,7 +10,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 video_to_convert = ""
 video_name = ""
 file_name = ""
-# https://www.youtube.com/watch?v=DBiu4ICFgB0
 
 
 def choose_folder():
@@ -104,8 +103,7 @@ def download_song(video_to_convert, choosen_folder, file_name):
         choosen_folder (str): folder to download file
         file_name (str): name with extension of the video
     """
-    #if video_to_convert and choosen_folder and file_name:
-    #label_song_status.configure(text=f"Téléchargement de {file_name} en cours ...", fg="blue")
+
     # Selection du fichier audio
     audio_file = video_to_convert.streams.filter(only_audio=True).first()
     # Téléchargement
